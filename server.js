@@ -1,6 +1,7 @@
 console.log('May Node be with you')
 const express = require('express');
 const bodyParser = require('body-parser');
+const http = require('http');
 const MongoClient = require('mongodb').MongoClient
 const app = express();
 
@@ -13,9 +14,7 @@ var db;
 MongoClient.connect('mongodb://admin:Password123@ds151078.mlab.com:51078/star-wars-quotes', (err, database) => {
   if (err) return console.log(err)
     db = database;
-    app.listen(() => {
-      console.log('listening on 80 mongo');
-    });
+    http.createServer(app).listen(80);
 });
 
 // THIS handles GET Requtest

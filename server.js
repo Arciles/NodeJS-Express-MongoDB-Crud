@@ -13,7 +13,7 @@ var db;
 MongoClient.connect('mongodb://admin:Password123@ds151078.mlab.com:51078/star-wars-quotes', (err, database) => {
   if (err) return console.log(err)
     db = database;
-    app.listen(80, () => {
+    app.listen(() => {
       console.log('listening on 80 mongo');
     });
 });

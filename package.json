@@ -1,0 +1,39 @@
+{
+  "name": "quotes-nodejs-express-mongodb",
+  "version": "1.0.0",
+  "description": "demo app for nodejs, express and mongodb. just simple crud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arciles/NodeJS-Express-MongoDB-Crud.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "crud",
+    "starwars",
+    "quotes",
+    "star",
+    "wars"
+  ],
+  "author": "Esat IBIS <esat.taha.ibis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arciles/NodeJS-Express-MongoDB-Crud/issues"
+  },
+  "homepage": "https://github.com/Arciles/NodeJS-Express-MongoDB-Crud#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.18"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

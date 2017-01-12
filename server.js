@@ -13,9 +13,7 @@ var db;
 MongoClient.connect('mongodb://admin:Password123@ds151078.mlab.com:51078/star-wars-quotes', (err, database) => {
   if (err) return console.log(err)
     db = database;
-    app.listen(3000,() => {
-      console.log('listening on 3000 mongo');
-    });
+    app.listen(3000);
 });
 
 // THIS handles GET Requtest
@@ -24,6 +22,7 @@ app.get('/', (req, res) => {
     if (err) return console.log(err)
     // renders index.ejs
     res.render('index.ejs', {quotes: results});
+    //res.end();
   });
 });
 

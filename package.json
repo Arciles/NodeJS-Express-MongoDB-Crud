@@ -2,7 +2,7 @@
   "name": "quotes-nodejs-express-mongodb",
   "version": "1.0.0",
   "description": "demo app for nodejs, express and mongodb. just simple crud",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
